@@ -8,9 +8,21 @@
 
 import UIKit
 
-class AccountViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    var userSetting = ["Name", "Date of Birth", "Test"]
+class AccountViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    var userSetting = ["Name", "Password", "Date of Birth", "Sign Out"]
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return userSetting.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UserSettingCell", for: indexPath)
+        cell.textLabel?.text = userSetting[indexPath.row]
+        cell.detailTextLabel?.text = userSetting[indexPath.row]
+        cell.detailTextLabel?.textColor = UIColor.gray
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,23 +32,6 @@ class AccountViewController: UIViewController, UITableViewDataSource, UITableVie
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return userSetting.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "userSettingCell", for: indexPath)
-        
-        //Configure the cell...
-        
-        cell.textLabel?.text = userSetting[indexPath.row]
-        cell.detailTextLabel?.text = userSetting[indexPath.row]
-        print(userSetting[indexPath.row])
-        return cell
-        
     }
     /*
     // MARK: - Navigation
