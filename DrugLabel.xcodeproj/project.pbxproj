@@ -15,6 +15,7 @@
 		B913DE9E1FA8D2DD004547C4 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = B913DE9D1FA8D2DD004547C4 /* Assets */; };
 		B913DEA01FA8E43D004547C4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913DE9F1FA8E43D004547C4 /* CollectionViewCell.swift */; };
 		B913DEA21FA8E49B004547C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913DEA11FA8E49B004547C4 /* SearchViewController.swift */; };
+		B913DEA41FA981A5004547C4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913DEA31FA981A5004547C4 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B913DE9D1FA8D2DD004547C4 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = ../TM/Assets; sourceTree = "<group>"; };
 		B913DE9F1FA8E43D004547C4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B913DEA11FA8E49B004547C4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B913DEA31FA981A5004547C4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +65,10 @@
 			children = (
 				295930551FA7450600E488D8 /* AppDelegate.swift */,
 				295930571FA7450600E488D8 /* ViewController.swift */,
+				B913DEA11FA8E49B004547C4 /* SearchViewController.swift */,
+				B913DEA31FA981A5004547C4 /* DetailsViewController.swift */,
 				295930591FA7450600E488D8 /* Main.storyboard */,
 				B913DE9F1FA8E43D004547C4 /* CollectionViewCell.swift */,
-				B913DEA11FA8E49B004547C4 /* SearchViewController.swift */,
 				2959305C1FA7450600E488D8 /* Assets.xcassets */,
 				2959305E1FA7450600E488D8 /* LaunchScreen.storyboard */,
 				295930611FA7450600E488D8 /* Info.plist */,
@@ -150,6 +153,7 @@
 				295930561FA7450600E488D8 /* AppDelegate.swift in Sources */,
 				B913DEA21FA8E49B004547C4 /* SearchViewController.swift in Sources */,
 				B913DEA01FA8E43D004547C4 /* CollectionViewCell.swift in Sources */,
+				B913DEA41FA981A5004547C4 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
