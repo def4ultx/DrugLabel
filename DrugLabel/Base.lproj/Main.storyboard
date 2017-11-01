@@ -181,7 +181,7 @@
                                         <connections>
                                             <outlet property="myImage" destination="tqN-uF-WIn" id="tIL-a4-JcR"/>
                                             <outlet property="myTitle" destination="74c-T7-jrB" id="sq2-kH-FZm"/>
-                                            <segue destination="Kd0-sq-Y8W" kind="push" id="4rf-uL-AwC"/>
+                                            <segue destination="Kd0-sq-Y8W" kind="show" identifier="segue" id="sby-8Q-GTj"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -212,42 +212,49 @@
             </objects>
             <point key="canvasLocation" x="1098.5507246376812" y="133.69565217391306"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="36N-QC-xeP">
             <objects>
-                <viewController id="Kd0-sq-Y8W" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailVC" id="Kd0-sq-Y8W" customClass="DetailsViewController" customModule="DrugLabel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9T-aX-q2v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-yF-Mn8">
-                                <rect key="frame" x="87" y="109" width="240" height="128"/>
+                                <rect key="frame" x="54" y="108" width="307" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9R-oH-5ha">
+                                <rect key="frame" x="182" y="368" width="50" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Q4S-OI-nBQ">
-                                <rect key="frame" x="87" y="369" width="240" height="128"/>
+                                <rect key="frame" x="87" y="447" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9R-oH-5ha">
-                                <rect key="frame" x="182" y="291" width="50" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="fGz-7A-0tx"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zPa-3L-wbF"/>
+                    <navigationItem key="navigationItem" id="zPa-3L-wbF">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="GBk-NH-cIc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="DetailsTextView" destination="Q4S-OI-nBQ" id="Ji4-4s-6ho"/>
+                        <outlet property="detailsImage" destination="LIh-yF-Mn8" id="640-wY-Znu"/>
+                        <outlet property="titleLabel" destination="j9R-oH-5ha" id="ka7-iz-iAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOM-ds-J4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1875" y="134"/>
+            <point key="canvasLocation" x="1873.913043478261" y="133.69565217391306"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zEZ-I8-5bC">
