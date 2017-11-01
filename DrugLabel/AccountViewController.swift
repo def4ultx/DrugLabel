@@ -8,8 +8,9 @@
 
 import UIKit
 
-class AccountViewController: UIViewController {
+class AccountViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var userSetting = ["Name", "Date of Birth", "Test"]
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +22,22 @@ class AccountViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return userSetting.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userSettingCell", for: indexPath)
+        
+        //Configure the cell...
+        
+        cell.textLabel?.text = userSetting[indexPath.row]
+        cell.detailTextLabel?.text = userSetting[indexPath.row]
+        print(userSetting[indexPath.row])
+        return cell
+        
+    }
     /*
     // MARK: - Navigation
 
