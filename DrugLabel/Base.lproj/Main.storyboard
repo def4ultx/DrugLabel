@@ -10,17 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Account-->
         <!--Drug Label-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrugLabel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGV-2y-CYA">
-                                <rect key="frame" x="12" y="75" width="136" height="44"/>
+                                <rect key="frame" x="12" y="75" width="97" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="mVM-Eg-81D"/>
                                 </constraints>
@@ -29,14 +28,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="eb8-pu-a0Z">
-                                <rect key="frame" x="0.0" y="119" width="358" height="56"/>
+                                <rect key="frame" x="0.0" y="119" width="319" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="gUd-xb-LG1"/>
                                 </constraints>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFb-Pb-Ar3">
-                                <rect key="frame" x="358" y="127" width="46" height="43"/>
+                                <rect key="frame" x="319" y="127" width="46" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="75J-eo-hxC"/>
                                     <constraint firstAttribute="width" constant="46" id="gA0-qz-kMq"/>
@@ -44,7 +43,7 @@
                                 <state key="normal" title="Button" image="barcode"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJT-EL-lZM">
-                                <rect key="frame" x="12" y="189" width="78.666666666666671" height="44"/>
+                                <rect key="frame" x="12" y="189" width="78.5" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dog-TW-y8Y"/>
                                 </constraints>
@@ -53,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMn-SH-K5q">
-                                <rect key="frame" x="358" y="189" width="46" height="44"/>
+                                <rect key="frame" x="319" y="189" width="46" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="n1L-1u-S0s"/>
                                     <constraint firstAttribute="height" constant="44" id="zmQ-xc-zVQ"/>
@@ -64,14 +63,14 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P1x-gU-yUq">
-                                <rect key="frame" x="0.0" y="234" width="414" height="502"/>
+                                <rect key="frame" x="0.0" y="234" width="375" height="433"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="PC1-xs-MF5">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PC1-xs-MF5" id="HAP-Ee-81F">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -119,15 +118,15 @@
             <objects>
                 <viewController id="HSJ-Ze-CFI" customClass="SearchViewController" customModule="DrugLabel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RpE-N8-k5m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="eM9-pz-Upv">
-                                <rect key="frame" x="0.0" y="64" width="358" height="56"/>
+                                <rect key="frame" x="0.0" y="64" width="319" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKL-SA-pui">
-                                <rect key="frame" x="358" y="71" width="46" height="44"/>
+                                <rect key="frame" x="319" y="71" width="46" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="9fV-JK-MvA"/>
                                     <constraint firstAttribute="height" constant="44" id="OyZ-of-Ulb"/>
@@ -135,7 +134,7 @@
                                 <state key="normal" title="Button" image="barcode"/>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ws0-Ir-vwM">
-                                <rect key="frame" x="0.0" y="127" width="414" height="609"/>
+                                <rect key="frame" x="0.0" y="115.5" width="375" height="551.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ws0-Ir-vwM" secondAttribute="height" multiplier="138:203" id="taF-Ew-wOL"/>
@@ -148,7 +147,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="fYB-eB-ZaK" customClass="CollectionViewCell" customModule="DrugLabel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="202" height="158"/>
+                                        <rect key="frame" x="86.5" y="0.0" width="202" height="158"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="202" height="158"/>
@@ -206,7 +205,11 @@
                         <viewLayoutGuide key="safeArea" id="5VX-PJ-DpU"/>
                     </view>
                     <navigationItem key="navigationItem" id="McV-Sn-qNf">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tqs-WE-VRz"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tqs-WE-VRz">
+                            <connections>
+                                <segue destination="UZR-Zs-Av9" kind="presentation" id="GvN-LA-V9B"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqp-tL-Ae2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,7 +221,7 @@
             <objects>
                 <viewController storyboardIdentifier="detailVC" id="Kd0-sq-Y8W" customClass="DetailsViewController" customModule="DrugLabel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H9T-aX-q2v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-yF-Mn8">
@@ -263,7 +266,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIC-BE-sP0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l2a-BJ-gZ0">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -275,6 +278,23 @@
             </objects>
             <point key="canvasLocation" x="-602" y="134"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ING-0e-MsW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jzs-vg-Lin" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="jcN-NW-JsL" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EDl-r4-UT3">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UZR-Zs-Av9" kind="relationship" relationship="rootViewController" id="7Ch-0W-OBu"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-602" y="853"/>
+        </scene>
+        <!--Account-->
         <scene sceneID="RxK-Or-uCY">
             <objects>
                 <viewController id="BJf-Gw-6la" customClass="AccountViewController" customModule="DrugLabel" customModuleProvider="target" sceneMemberID="viewController">
@@ -430,6 +450,44 @@
             </objects>
             <point key="canvasLocation" x="1716" y="1210.344827586207"/>
         </scene>
+        <!--Add-->
+        <scene sceneID="Zh2-TW-9dM">
+            <objects>
+                <viewController id="UZR-Zs-Av9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PNj-6f-85b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="m6u-ah-B6u">
+                                <rect key="frame" x="67" y="381" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iX1-Ry-id0">
+                                <rect key="frame" x="167" y="561" width="42" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IPS-2b-2T7">
+                                <rect key="frame" x="51" y="127" width="272" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="PEb-XK-ivv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add" id="NMZ-Mp-tZu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="stop" id="DGC-M6-zeE"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfI-mz-gfT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.80000000000001" y="851.42428785607206"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="391-jf-8IC">
             <objects>
@@ -457,4 +515,7 @@
         <image name="barcode" width="512" height="512"/>
         <image name="user_account" width="128" height="128"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="7Ch-0W-OBu"/>
+    </inferredMetricsTieBreakers>
 </document>

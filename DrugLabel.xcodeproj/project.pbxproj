@@ -15,10 +15,10 @@
 		29A0333D1FA9070C006B197C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0333C1FA9070C006B197C /* AccountViewController.swift */; };
 		29D25C601FA9E75300906048 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D25C5F1FA9E75300906048 /* DesignableUITextField.swift */; };
 		29D25C621FA9EE1C00906048 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D25C611FA9EE1C00906048 /* LoginViewController.swift */; };
-		C60FC7789443BC28AD8811D3 /* Pods_DrugLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAC466CD6CB705F79CA5906 /* Pods_DrugLabel.framework */; };
 		B913DEA01FA8E43D004547C4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913DE9F1FA8E43D004547C4 /* CollectionViewCell.swift */; };
 		B913DEA21FA8E49B004547C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913DEA11FA8E49B004547C4 /* SearchViewController.swift */; };
 		B913DEA41FA981A5004547C4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B913DEA31FA981A5004547C4 /* DetailsViewController.swift */; };
+		C60FC7789443BC28AD8811D3 /* Pods_DrugLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAC466CD6CB705F79CA5906 /* Pods_DrugLabel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,12 +32,12 @@
 		29A0333C1FA9070C006B197C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		29D25C5F1FA9E75300906048 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		29D25C611FA9EE1C00906048 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C5D5152553D075AA1B75104F /* Pods-DrugLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel.release.xcconfig"; sourceTree = "<group>"; };
-		CDAC466CD6CB705F79CA5906 /* Pods_DrugLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrugLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDDBF5D0337F601254D2A347 /* Pods-DrugLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel.debug.xcconfig"; sourceTree = "<group>"; };
 		B913DE9F1FA8E43D004547C4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		B913DEA11FA8E49B004547C4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B913DEA31FA981A5004547C4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		C5D5152553D075AA1B75104F /* Pods-DrugLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel.release.xcconfig"; sourceTree = "<group>"; };
+		CDAC466CD6CB705F79CA5906 /* Pods_DrugLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrugLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDBF5D0337F601254D2A347 /* Pods-DrugLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,12 +377,14 @@
 			baseConfigurationReference = EDDBF5D0337F601254D2A347 /* Pods-DrugLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5FPC22W36;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DrugLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.egco428.DrugLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -393,12 +395,14 @@
 			baseConfigurationReference = C5D5152553D075AA1B75104F /* Pods-DrugLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T5FPC22W36;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DrugLabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.egco428.DrugLabel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
