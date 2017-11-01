@@ -12,6 +12,7 @@
 		2959305B1FA7450600E488D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295930591FA7450600E488D8 /* Main.storyboard */; };
 		2959305D1FA7450600E488D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2959305C1FA7450600E488D8 /* Assets.xcassets */; };
 		295930601FA7450600E488D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2959305E1FA7450600E488D8 /* LaunchScreen.storyboard */; };
+		C60FC7789443BC28AD8811D3 /* Pods_DrugLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAC466CD6CB705F79CA5906 /* Pods_DrugLabel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2959305C1FA7450600E488D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2959305F1FA7450600E488D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		295930611FA7450600E488D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5D5152553D075AA1B75104F /* Pods-DrugLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel.release.xcconfig"; sourceTree = "<group>"; };
+		CDAC466CD6CB705F79CA5906 /* Pods_DrugLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrugLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDDBF5D0337F601254D2A347 /* Pods-DrugLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrugLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C60FC7789443BC28AD8811D3 /* Pods_DrugLabel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				295930541FA7450600E488D8 /* DrugLabel */,
 				295930531FA7450600E488D8 /* Products */,
+				7AC6BD0A94EC5704790280CD /* Pods */,
+				CBD5B0E37FAE452C955140F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = DrugLabel;
 			sourceTree = "<group>";
 		};
+		7AC6BD0A94EC5704790280CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDDBF5D0337F601254D2A347 /* Pods-DrugLabel.debug.xcconfig */,
+				C5D5152553D075AA1B75104F /* Pods-DrugLabel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBD5B0E37FAE452C955140F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDAC466CD6CB705F79CA5906 /* Pods_DrugLabel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 295930641FA7450600E488D8 /* Build configuration list for PBXNativeTarget "DrugLabel" */;
 			buildPhases = (
+				853E8BE997ECA2DC12F6D177 /* [CP] Check Pods Manifest.lock */,
 				2959304E1FA7450600E488D8 /* Sources */,
 				2959304F1FA7450600E488D8 /* Frameworks */,
 				295930501FA7450600E488D8 /* Resources */,
+				9E150CC9D0BB4EBF8D684631 /* [CP] Embed Pods Frameworks */,
+				6ECBEA1918368195D1467075 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6ECBEA1918368195D1467075 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853E8BE997ECA2DC12F6D177 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrugLabel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E150CC9D0BB4EBF8D684631 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrugLabel/Pods-DrugLabel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2959304E1FA7450600E488D8 /* Sources */ = {
@@ -272,6 +350,7 @@
 		};
 		295930651FA7450600E488D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDDBF5D0337F601254D2A347 /* Pods-DrugLabel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +365,7 @@
 		};
 		295930661FA7450600E488D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D5152553D075AA1B75104F /* Pods-DrugLabel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
