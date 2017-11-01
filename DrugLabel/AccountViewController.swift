@@ -33,7 +33,7 @@ class AccountViewController: UIViewController, UITableViewDataSource, UITableVie
         //Configure the cell...
         
         cell.textLabel?.text = userSetting[indexPath.row]
-        cell.detailTextLabel?.text = userSetting[indexPath.row]
+//        cell.detailTextLabel?.text = userSetting[indexPath.row]
         print(userSetting[indexPath.row])
         return cell
         
