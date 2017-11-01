@@ -13,6 +13,8 @@
 		2959305D1FA7450600E488D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2959305C1FA7450600E488D8 /* Assets.xcassets */; };
 		295930601FA7450600E488D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2959305E1FA7450600E488D8 /* LaunchScreen.storyboard */; };
 		29A0333D1FA9070C006B197C /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A0333C1FA9070C006B197C /* AccountViewController.swift */; };
+		29D25C601FA9E75300906048 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D25C5F1FA9E75300906048 /* DesignableUITextField.swift */; };
+		29D25C621FA9EE1C00906048 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D25C611FA9EE1C00906048 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2959305F1FA7450600E488D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		295930611FA7450600E488D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29A0333C1FA9070C006B197C /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		29D25C5F1FA9E75300906048 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
+		29D25C611FA9EE1C00906048 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				295930551FA7450600E488D8 /* AppDelegate.swift */,
 				295930571FA7450600E488D8 /* ViewController.swift */,
 				295930591FA7450600E488D8 /* Main.storyboard */,
+				29D25C611FA9EE1C00906048 /* LoginViewController.swift */,
+				29D25C5F1FA9E75300906048 /* DesignableUITextField.swift */,
 				29A0333C1FA9070C006B197C /* AccountViewController.swift */,
 				2959305C1FA7450600E488D8 /* Assets.xcassets */,
 				2959305E1FA7450600E488D8 /* LaunchScreen.storyboard */,
@@ -142,6 +148,8 @@
 				295930581FA7450600E488D8 /* ViewController.swift in Sources */,
 				295930561FA7450600E488D8 /* AppDelegate.swift in Sources */,
 				29A0333D1FA9070C006B197C /* AccountViewController.swift in Sources */,
+				29D25C621FA9EE1C00906048 /* LoginViewController.swift in Sources */,
+				29D25C601FA9E75300906048 /* DesignableUITextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
