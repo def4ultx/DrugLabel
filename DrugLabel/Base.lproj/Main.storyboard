@@ -48,17 +48,32 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zky-wU-hdt">
-                                <rect key="frame" x="0.0" y="290" width="375" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Zky-wU-hdt">
+                                <rect key="frame" x="0.0" y="290" width="375" height="377"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="userSettingCell" id="edj-Ek-nf3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="userSettingCell" textLabel="j1V-jY-Zfi" detailTextLabel="DcC-ZH-K2L" style="IBUITableViewCellStyleValue1" id="edj-Ek-nf3">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="edj-Ek-nf3" id="5iC-Tg-7lV">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j1V-jY-Zfi">
+                                                    <rect key="frame" x="15" y="12" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DcC-ZH-K2L">
+                                                    <rect key="frame" x="296" y="12" width="44" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -66,8 +81,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Zky-wU-hdt" firstAttribute="top" secondItem="xZJ-W4-fyP" secondAttribute="bottom" constant="12" id="FzP-WG-EOi"/>
                             <constraint firstItem="xZJ-W4-fyP" firstAttribute="centerX" secondItem="QTf-oT-Bwx" secondAttribute="centerX" id="JXh-vn-oIv"/>
                             <constraint firstItem="Gx4-hF-a1L" firstAttribute="top" secondItem="3aW-j8-E1M" secondAttribute="top" constant="40" id="LHR-16-AVi"/>
+                            <constraint firstItem="Zky-wU-hdt" firstAttribute="leading" secondItem="3aW-j8-E1M" secondAttribute="leading" id="bQq-Cp-HJt"/>
+                            <constraint firstItem="Zky-wU-hdt" firstAttribute="trailing" secondItem="3aW-j8-E1M" secondAttribute="trailing" id="bYc-hP-SqB"/>
                             <constraint firstItem="Gx4-hF-a1L" firstAttribute="centerX" secondItem="QTf-oT-Bwx" secondAttribute="centerX" id="dR3-im-SIv"/>
                             <constraint firstItem="xZJ-W4-fyP" firstAttribute="top" secondItem="Gx4-hF-a1L" secondAttribute="bottom" constant="10" id="e5X-dd-1gw"/>
                         </constraints>
